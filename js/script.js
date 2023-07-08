@@ -58,7 +58,11 @@ function handleDigit(digit) {
   if (ops == null) {
     ops = [ digit ];
   } else if (ops.length % 2 == 1) {
-    ops[ops.length - 1] += digit;
+    const index = ops.length - 1;
+
+    if (digit == '.' && ops[index].indexOf('.') != -1) return;
+
+    ops[index] += digit;
   } else {
     ops.push(value);
   }
