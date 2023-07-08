@@ -1,0 +1,40 @@
+#calculator {
+  width: 300px;
+  border: 1px solid black;
+  margin: auto; 
+}
+
+#display {
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid black;
+  text-align: right;
+}
+
+#buttons {
+  margin: 10px;
+  display: flex;
+}
+
+#digits {
+  flex: 3;
+}
+
+#operators {
+  flex: 1;
+}
+
+button {
+  margin: 3px;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+button.digit {
+  background-color: aqua;
+}
+
+button#clear {
+  background-color: red;
+}
